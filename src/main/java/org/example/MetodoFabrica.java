@@ -1,14 +1,14 @@
 package org.example;
 
-public class FactoryMethod {
+public class MetodoFabrica {
 
-    private static final FactoryMethod UNICA = new FactoryMethod();
+    private static final MetodoFabrica UNICA = new MetodoFabrica();
 
-    public static FactoryMethod obterInstancia() {
+    public static MetodoFabrica obterInstancia() {
         return UNICA;
     }
 
-    public AbstractFactory selecionarFabrica(String categoria) {
+    public FabricaAbstrata selecionarFabrica(String categoria) {
         if ("PJ".equalsIgnoreCase(categoria)) {
             return new FabricaPJ();
         }
@@ -18,6 +18,6 @@ public class FactoryMethod {
         throw new IllegalArgumentException("Fábrica inexistente");
     }
 
-    private FactoryMethod() {
+    private MetodoFabrica() {
     }
 }

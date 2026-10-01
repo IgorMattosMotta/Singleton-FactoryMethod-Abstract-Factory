@@ -1,6 +1,6 @@
 package org.example;
 
-public class FabricaPF implements AbstractFactory {
+public class FabricaPF implements FabricaAbstrata {
 
     @Override
     public Procuracao gerarProcuracao() {

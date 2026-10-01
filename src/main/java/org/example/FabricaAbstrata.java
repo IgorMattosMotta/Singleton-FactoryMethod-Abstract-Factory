@@ -1,6 +1,6 @@
 package org.example;
 
-public interface AbstractFactory {
+public interface FabricaAbstrata {
 
     Procuracao gerarProcuracao();
     Contrato gerarContrato();

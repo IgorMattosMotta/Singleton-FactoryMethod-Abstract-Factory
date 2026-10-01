@@ -5,7 +5,7 @@ public class Cliente {
     private final Procuracao minhaProcuracao;
     private final Contrato meuContrato;
 
-    public Cliente(AbstractFactory fabricaEscolhida) {
+    public Cliente(FabricaAbstrata fabricaEscolhida) {
         this.minhaProcuracao = fabricaEscolhida.gerarProcuracao();
         this.meuContrato = fabricaEscolhida.gerarContrato();
     }
